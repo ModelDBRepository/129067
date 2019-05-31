@@ -1,0 +1,235 @@
+//This file reads in four theta cell spike trains from three disk files:
+// placetrrack0_1.dat, placetrack0_2.dat, placetrack0_3.dat, placetrack0_4.dat
+//
+//The spike trains were generated with a MATLAB script provided in this directory. 
+//To re-execute the script for saving the spike train files, forst read the rat path data into MATLAB
+//as follows:
+//    >>load 'bigcircle_2msbins';
+//Then type the following command at the MATLAB prompt:
+//    >>make_bordercell_theta_spike_trains(rsTS, rsX, rsY, 8, 7.75);
+//Note that since the spike trains are generated stochastically, the MATLAB script will not generate identical 
+//spike trains every time it is run (unless the random number generator is identically seeded).
+
+spikefile.ropen("lintrack25_1.dat")  	//open file containing spike times of one theta cell
+evec[0] = new Vector()			//create a new vector to store spike time stamps
+evec[0].scanf(spikefile)		//read in spike times from the file
+vs0_1_VecStim[0].pp.play(evec[0])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_1_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("lintrack25_2.dat")	//repeat for each additional theta cell input...
+evec[1] = new Vector()
+evec[1].scanf(spikefile)
+vs0_2_VecStim[0].pp.play(evec[1])
+pplist.append(vs0_2_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrack25_3.dat")
+evec[2] = new Vector()
+evec[2].scanf(spikefile)
+vs0_3_VecStim[0].pp.play(evec[2])
+pplist.append(vs0_3_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrack25_4.dat")  	//open file containing spike times of one theta cell
+evec[3] = new Vector()			//create a new vector to store spike time stamps
+evec[3].scanf(spikefile)		//read in spike times from the file
+vs0_4_VecStim[0].pp.play(evec[3])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_4_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("lintrack25_5.dat")	//repeat for each additional theta cell input...
+evec[4] = new Vector()
+evec[4].scanf(spikefile)
+vs0_5_VecStim[0].pp.play(evec[4])
+pplist.append(vs0_5_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrack25_6.dat")
+evec[5] = new Vector()
+evec[5].scanf(spikefile)
+vs0_6_VecStim[0].pp.play(evec[5])
+pplist.append(vs0_6_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrack25_7.dat")  	//open file containing spike times of one theta cell
+evec[6] = new Vector()			//create a new vector to store spike time stamps
+evec[6].scanf(spikefile)		//read in spike times from the file
+vs0_7_VecStim[0].pp.play(evec[6])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_7_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("lintrack25_8.dat")	//repeat for each additional theta cell input...
+evec[7] = new Vector()
+evec[7].scanf(spikefile)
+vs0_8_VecStim[0].pp.play(evec[7])
+pplist.append(vs0_8_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrackB25_1.dat")  	//open file containing spike times of one theta cell
+evec[8] = new Vector()			//create a new vector to store spike time stamps
+evec[8].scanf(spikefile)		//read in spike times from the file
+vs0_9_VecStim[0].pp.play(evec[8])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_9_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("lintrackB25_2.dat")	//repeat for each additional theta cell input...
+evec[9] = new Vector()
+evec[9].scanf(spikefile)
+vs0_10_VecStim[0].pp.play(evec[9])
+pplist.append(vs0_10_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrackB25_3.dat")
+evec[10] = new Vector()
+evec[10].scanf(spikefile)
+vs0_11_VecStim[0].pp.play(evec[10])
+pplist.append(vs0_11_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrackB25_4.dat")  	//open file containing spike times of one theta cell
+evec[11] = new Vector()			//create a new vector to store spike time stamps
+evec[11].scanf(spikefile)		//read in spike times from the file
+vs0_12_VecStim[0].pp.play(evec[11])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_12_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("lintrackB25_5.dat")	//repeat for each additional theta cell input...
+evec[12] = new Vector()
+evec[12].scanf(spikefile)
+vs0_13_VecStim[0].pp.play(evec[12])
+pplist.append(vs0_13_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrackB25_6.dat")
+evec[13] = new Vector()
+evec[13].scanf(spikefile)
+vs0_14_VecStim[0].pp.play(evec[13])
+pplist.append(vs0_14_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrackB25_7.dat")  	//open file containing spike times of one theta cell
+evec[14] = new Vector()			//create a new vector to store spike time stamps
+evec[14].scanf(spikefile)		//read in spike times from the file
+vs0_15_VecStim[0].pp.play(evec[14])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_15_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("lintrackB25_8.dat")	//repeat for each additional theta cell input...
+evec[15] = new Vector()
+evec[15].scanf(spikefile)
+vs0_16_VecStim[0].pp.play(evec[15])
+pplist.append(vs0_16_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrackC25_1.dat")  	//open file containing spike times of one theta cell
+evec[16] = new Vector()			//create a new vector to store spike time stamps
+evec[16].scanf(spikefile)		//read in spike times from the file
+vs0_17_VecStim[0].pp.play(evec[16])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_17_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("lintrackC25_2.dat")	//repeat for each additional theta cell input...
+evec[17] = new Vector()
+evec[17].scanf(spikefile)
+vs0_18_VecStim[0].pp.play(evec[17])
+pplist.append(vs0_18_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrackC25_3.dat")
+evec[18] = new Vector()
+evec[18].scanf(spikefile)
+vs0_19_VecStim[0].pp.play(evec[18])
+pplist.append(vs0_19_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrackC25_4.dat")  	//open file containing spike times of one theta cell
+evec[19] = new Vector()			//create a new vector to store spike time stamps
+evec[19].scanf(spikefile)		//read in spike times from the file
+vs0_20_VecStim[0].pp.play(evec[19])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_20_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("lintrackC25_5.dat")	//repeat for each additional theta cell input...
+evec[20] = new Vector()
+evec[20].scanf(spikefile)
+vs0_21_VecStim[0].pp.play(evec[20])
+pplist.append(vs0_21_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrackC25_6.dat")
+evec[21] = new Vector()
+evec[21].scanf(spikefile)
+vs0_22_VecStim[0].pp.play(evec[21])
+pplist.append(vs0_22_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrackC25_7.dat")  	//open file containing spike times of one theta cell
+evec[22] = new Vector()			//create a new vector to store spike time stamps
+evec[22].scanf(spikefile)		//read in spike times from the file
+vs0_23_VecStim[0].pp.play(evec[22])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_23_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("lintrackC25_8.dat")	//repeat for each additional theta cell input...
+evec[23] = new Vector()
+evec[23].scanf(spikefile)
+vs0_24_VecStim[0].pp.play(evec[23])
+pplist.append(vs0_24_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrackD25_1.dat")  	//open file containing spike times of one theta cell
+evec[24] = new Vector()			//create a new vector to store spike time stamps
+evec[24].scanf(spikefile)		//read in spike times from the file
+vs0_25_VecStim[0].pp.play(evec[24])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_25_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("lintrackD25_2.dat")	//repeat for each additional theta cell input...
+evec[25] = new Vector()
+evec[25].scanf(spikefile)
+vs0_26_VecStim[0].pp.play(evec[25])
+pplist.append(vs0_26_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrackD25_3.dat")
+evec[26] = new Vector()
+evec[26].scanf(spikefile)
+vs0_27_VecStim[0].pp.play(evec[26])
+pplist.append(vs0_27_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrackD25_4.dat")  	//open file containing spike times of one theta cell
+evec[27] = new Vector()			//create a new vector to store spike time stamps
+evec[27].scanf(spikefile)		//read in spike times from the file
+vs0_28_VecStim[0].pp.play(evec[27])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_28_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("lintrackD25_5.dat")	//repeat for each additional theta cell input...
+evec[28] = new Vector()
+evec[28].scanf(spikefile)
+vs0_29_VecStim[0].pp.play(evec[28])
+pplist.append(vs0_29_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrackD25_6.dat")
+evec[29] = new Vector()
+evec[29].scanf(spikefile)
+vs0_30_VecStim[0].pp.play(evec[29])
+pplist.append(vs0_30_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("lintrackD25_7.dat")  	//open file containing spike times of one theta cell
+evec[30] = new Vector()			//create a new vector to store spike time stamps
+evec[30].scanf(spikefile)		//read in spike times from the file
+vs0_31_VecStim[0].pp.play(evec[30])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_31_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("lintrackD25_8.dat")	//repeat for each additional theta cell input...
+evec[31] = new Vector()
+evec[31].scanf(spikefile)
+vs0_32_VecStim[0].pp.play(evec[31])
+pplist.append(vs0_32_VecStim[0].pp)
+spikefile.close()

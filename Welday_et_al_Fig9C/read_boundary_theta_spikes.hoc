@@ -1,0 +1,254 @@
+//This file reads in four theta cell spike trains from twelve disk files:
+// boundarytheta_1.dat through boundarytheta_12.dat
+
+spikefile.ropen("boundarytheta_1.dat")  	//open file containing spike times of one theta cell
+evec[0] = new Vector()			//create a new vector to store spike time stamps
+evec[0].scanf(spikefile)		//read in spike times from the file
+vs0_1_VecStim[0].pp.play(evec[0])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_1_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("boundarytheta_2.dat")	//repeat for each additional theta cell input...
+evec[1] = new Vector()
+evec[1].scanf(spikefile)
+vs0_2_VecStim[0].pp.play(evec[1])
+pplist.append(vs0_2_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("boundarytheta_3.dat")
+evec[2] = new Vector()
+evec[2].scanf(spikefile)
+vs0_3_VecStim[0].pp.play(evec[2])
+pplist.append(vs0_3_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("boundarytheta_4.dat") 	//open file containing spike times of one theta cell
+evec[3] = new Vector()			//create a new vector to store spike time stamps
+evec[3].scanf(spikefile)		//read in spike times from the file
+vs0_4_VecStim[0].pp.play(evec[3])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_4_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("boundarytheta_5.dat")	//repeat for each additional theta cell input...
+evec[4] = new Vector()
+evec[4].scanf(spikefile)
+vs0_5_VecStim[0].pp.play(evec[4])
+pplist.append(vs0_5_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("boundarytheta_6.dat")
+evec[5] = new Vector()
+evec[5].scanf(spikefile)
+vs0_6_VecStim[0].pp.play(evec[5])
+pplist.append(vs0_6_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("boundarytheta_7.dat")  	//open file containing spike times of one theta cell
+evec[6] = new Vector()			//create a new vector to store spike time stamps
+evec[6].scanf(spikefile)		//read in spike times from the file
+vs0_7_VecStim[0].pp.play(evec[6])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_7_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("boundarytheta_8.dat")	//repeat for each additional theta cell input...
+evec[7] = new Vector()
+evec[7].scanf(spikefile)
+vs0_8_VecStim[0].pp.play(evec[7])
+pplist.append(vs0_8_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("boundarytheta_9.dat")  	//open file containing spike times of one theta cell
+evec[8] = new Vector()			//create a new vector to store spike time stamps
+evec[8].scanf(spikefile)		//read in spike times from the file
+vs0_9_VecStim[0].pp.play(evec[8])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_9_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+
+spikefile.ropen("boundarytheta_10.dat")	//repeat for each additional theta cell input...
+evec[9] = new Vector()
+evec[9].scanf(spikefile)
+vs0_10_VecStim[0].pp.play(evec[9])
+pplist.append(vs0_10_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("boundarytheta_11.dat")
+evec[10] = new Vector()
+evec[10].scanf(spikefile)
+vs0_11_VecStim[0].pp.play(evec[10])
+pplist.append(vs0_11_VecStim[0].pp)
+spikefile.close()
+
+spikefile.ropen("boundarytheta_12.dat") 	//open file containing spike times of one theta cell
+evec[11] = new Vector()			//create a new vector to store spike time stamps
+evec[11].scanf(spikefile)		//read in spike times from the file
+vs0_12_VecStim[0].pp.play(evec[11])	//play the spike times into a VecStim object during the simulation
+pplist.append(vs0_12_VecStim[0].pp)	//append the VecStim to the pp list
+spikefile.close()			//close the data file
+//
+//spikefile.ropen("boundarytheta_13.dat")	//repeat for each additional theta cell input...
+//evec[12] = new Vector()
+//evec[12].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[12])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_14.dat")
+//evec[13] = new Vector()
+//evec[13].scanf(spikefile)
+//vs0_3_VecStim[0].pp.play(evec[13])
+//pplist.append(vs0_3_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_15.dat")  	//open file containing spike times of one theta cell
+//evec[14] = new Vector()			//create a new vector to store spike time stamps
+//evec[14].scanf(spikefile)		//read in spike times from the file
+//vs0_1_VecStim[0].pp.play(evec[14])	//play the spike times into a VecStim object during the simulation
+//pplist.append(vs0_1_VecStim[0].pp)	//append the VecStim to the pp list
+//spikefile.close()			//close the data file
+//
+//spikefile.ropen("boundarytheta_16.dat")	//repeat for each additional theta cell input...
+//evec[15] = new Vector()
+//evec[15].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[15])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+
+//spikefile.ropen("boundarytheta_17.dat")	//repeat for each additional theta cell input...
+//evec[16] = new Vector()
+//evec[16].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[16])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_18.dat")	//repeat for each additional theta cell input...
+//evec[17] = new Vector()
+//evec[17].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[17])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_19.dat")	//repeat for each additional theta cell input...
+//evec[18] = new Vector()
+//evec[18].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[18])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_20.dat")	//repeat for each additional theta cell input...
+//evec[19] = new Vector()
+//evec[19].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[19])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_21.dat")	//repeat for each additional theta cell input...
+//evec[20] = new Vector()
+//evec[20].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[20])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_22.dat")	//repeat for each additional theta cell input...
+//evec[21] = new Vector()
+//evec[21].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[21])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_23.dat")	//repeat for each additional theta cell input...
+//evec[22] = new Vector()
+//evec[22].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[22])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_24.dat")	//repeat for each additional theta cell input...
+//evec[23] = new Vector()
+//evec[23].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[23])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_25.dat")	//repeat for each additional theta cell input...
+//evec[24] = new Vector()
+//evec[24].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[24])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_26.dat")	//repeat for each additional theta cell input...
+//evec[25] = new Vector()
+//evec[25].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[25])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_27.dat")	//repeat for each additional theta cell input...
+//evec[26] = new Vector()
+//evec[26].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[26])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_28.dat")	//repeat for each additional theta cell input...
+//evec[27] = new Vector()
+//evec[27].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[27])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_29.dat")	//repeat for each additional theta cell input...
+//evec[28] = new Vector()
+//evec[28].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[28])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_30.dat")	//repeat for each additional theta cell input...
+//evec[29] = new Vector()
+//evec[29].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[29])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_31.dat")	//repeat for each additional theta cell input...
+//evec[30] = new Vector()
+//evec[30].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[30])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_32.dat")	//repeat for each additional theta cell input...
+//evec[31] = new Vector()
+//evec[31].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[31])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_33.dat")	//repeat for each additional theta cell input...
+//evec[32] = new Vector()
+//evec[32].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[32])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_34.dat")	//repeat for each additional theta cell input...
+//evec[33] = new Vector()
+//evec[33].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[33])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_35.dat")	//repeat for each additional theta cell input...
+//evec[34] = new Vector()
+//evec[34].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[34])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()
+//
+//spikefile.ropen("boundarytheta_36.dat")	//repeat for each additional theta cell input...
+//evec[35] = new Vector()
+//evec[35].scanf(spikefile)
+//vs0_2_VecStim[0].pp.play(evec[35])
+//pplist.append(vs0_2_VecStim[0].pp)
+//spikefile.close()

@@ -1,0 +1,3 @@
+spikefile.wopen("SPIKEOUT.dat")
+spiketimes.printf(spikefile,"%8.1f\n")
+spikefile.close()

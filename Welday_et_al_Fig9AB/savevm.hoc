@@ -1,0 +1,3 @@
+vmfile.wopen("VmOUT.dat")
+vmvec.printf(vmfile,"%8.1f\n")
+vmfile.close()

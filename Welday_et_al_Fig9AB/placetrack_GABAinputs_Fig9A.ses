@@ -1,0 +1,89 @@
+{load_file("nrngui.hoc")}
+objectvar save_window_, rvp_
+objectvar scene_vector_[6]
+objectvar ocbox_, ocbox_list_, scene_, scene_list_
+{ocbox_list_ = new List()  scene_list_ = new List()}
+{pwman_place(0,0,0)}
+
+
+//Begin PointProcessGroupManager
+{
+load_file("pointgrp.hoc")
+}
+{
+ocbox_ = new PointProcessGroupManager(0)
+}
+{object_push(ocbox_)}
+{
+ms = new MechanismStandard("AMPA_S")
+mnews("AMPA_S", ms)
+select(0)
+execute("soma ocbox_.move(0.5)")
+ms = new MechanismStandard("AMPA_S")
+mnews("AMPA_S", ms)
+select(1)
+execute("soma ocbox_.move(0.5)")
+ms = new MechanismStandard("AMPA_S")
+mnews("AMPA_S", ms)
+select(2)
+execute("soma ocbox_.move(0.5)")
+ms = new MechanismStandard("AMPA_S")
+mnews("AMPA_S", ms)
+select(3)
+execute("soma ocbox_.move(0.5)")
+ms = new MechanismStandard("AMPA_S")
+mnews("AMPA_S", ms)
+select(4)
+execute("soma ocbox_.move(0.5)")
+ms = new MechanismStandard("AMPA_S")
+mnews("AMPA_S", ms)
+select(5)
+execute("soma ocbox_.move(0.5)")
+ms = new MechanismStandard("AMPA_S")
+mnews("AMPA_S", ms)
+select(6)
+execute("soma ocbox_.move(0.5)")
+ms = new MechanismStandard("AMPA_S")
+mnews("AMPA_S", ms)
+select(7)
+execute("soma ocbox_.move(0.5)")
+}
+{object_pop() doNotify()}
+{
+ocbox_ = ocbox_.v1
+ocbox_.map("PointProcessGroupManager", 115, 583, 603, 353.7)
+}
+objref ocbox_
+//End PointProcessGroupManager
+
+{
+save_window_ = new Graph(0)
+save_window_.size(2000,6000,-80,40)
+scene_vector_[3] = save_window_
+{save_window_.view(2000, -80, 4000, 120, 810, 61, 300.6, 200.8)}
+graphList[0].append(save_window_)
+save_window_.save_name("graphList[0].")
+save_window_.addexpr("v(.5)", 1, 1, 0.8, 0.9, 2)
+}
+
+
+{
+xpanel("AMPA_S (Globals)", 0)
+Cmax_AMPA_S = 1
+xvalue("Cmax_AMPA_S","Cmax_AMPA_S", 1,"", 0, 0 )
+Cdur_AMPA_S = .3
+xvalue("Cdur_AMPA_S","Cdur_AMPA_S", 1.,"", 0, 0 )
+Alpha_AMPA_S = .94
+xvalue("Alpha_AMPA_S","Alpha_AMPA_S", 1,"", 0, 0 )
+Beta_AMPA_S = 0.18
+xvalue("Beta_AMPA_S","Beta_AMPA_S", 1,"", 0, 0 )
+Erev_AMPA_S = 0
+xvalue("Erev_AMPA_S","Erev_AMPA_S", 1,"", 0, 0 )
+Rinf_AMPA_S = 0.97917
+xvalue("Rinf_AMPA_S","Rinf_AMPA_S", 1,"", 0, 0 )
+Rtau_AMPA_S = 2.0833
+xvalue("Rtau_AMPA_S","Rtau_AMPA_S", 1,"", 0, 0 )
+xpanel(181,111)
+}
+objectvar scene_vector_[1]
+{doNotify()}

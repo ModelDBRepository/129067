@@ -1,0 +1,322 @@
+{load_file("nrngui.hoc")}
+objectvar save_window_, rvp_
+objectvar scene_vector_[4]
+objectvar ocbox_, ocbox_list_, scene_, scene_list_
+{ocbox_list_ = new List()  scene_list_ = new List()}
+{pwman_place(0,0,0)}
+
+//Begin ArtCellGUI[0]
+{
+load_file("netbild.hoc")
+}
+ocbox_ = new ArtCellGUI(1)
+{object_push(ocbox_)}
+{
+tobj = new MechanismStandard("VecStim")
+}
+{append(tobj, "vs0_1")}
+{
+tobj = new MechanismStandard("VecStim")
+}
+{append(tobj, "vs0_2")}
+{
+tobj = new MechanismStandard("VecStim")
+}
+{append(tobj, "vs0_3")}
+{
+tobj = new MechanismStandard("VecStim")
+}
+{append(tobj, "vs0_4")}
+{
+tobj = new MechanismStandard("VecStim")
+}
+{append(tobj, "vs0_5")}
+{
+tobj = new MechanismStandard("VecStim")
+}
+{append(tobj, "vs0_6")}
+{
+tobj = new MechanismStandard("VecStim")
+}
+{append(tobj, "vs0_7")}
+{
+tobj = new MechanismStandard("VecStim")
+}
+{append(tobj, "vs0_8")}
+{
+tobj = new MechanismStandard("VecStim")
+}
+{append(tobj, "vs0_9")}
+{
+tobj = new MechanismStandard("VecStim")
+}
+{append(tobj, "vs0_10")}
+{
+tobj = new MechanismStandard("VecStim")
+}
+{append(tobj, "vs0_11")}
+{
+tobj = new MechanismStandard("VecStim")
+}
+{append(tobj, "vs0_12")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_13")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_14")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_15")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_16")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_17")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_18")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_19")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_20")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_21")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_22")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_23")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_24")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_25")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_26")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_27")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_28")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_29")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_30")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_31")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_32")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_33")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_34")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_35")}
+//{
+//tobj = new MechanismStandard("VecStim")
+//}
+//{append(tobj, "vs0_36")}
+{object_pop()}
+{
+ocbox_.map("ArtCellGUI[0]", 73, 156, 351, 283.5)
+}
+objref ocbox_
+//End ArtCellGUI[0]
+
+//Begin NetGUI[0]
+{
+load_file("netbild.hoc")
+}
+{ocbox_ = new NetGUI(1)}
+{object_push(ocbox_)}
+{mapold2new = new Vector()  missing = new List()}
+original_type("vs0_1")
+original_type("vs0_2")
+original_type("vs0_3")
+original_type("vs0_4")
+original_type("vs0_5")
+original_type("vs0_6")
+original_type("vs0_7")
+original_type("vs0_8")
+original_type("vs0_9")
+original_type("vs0_10")
+original_type("vs0_11")
+original_type("vs0_12")
+//original_type("vs0_13")
+//original_type("vs0_14")
+//original_type("vs0_15")
+//original_type("vs0_16")
+//original_type("vs0_17")
+//original_type("vs0_18")
+//original_type("vs0_19")
+//original_type("vs0_20")
+//original_type("vs0_21")
+//original_type("vs0_22")
+//original_type("vs0_23")
+//original_type("vs0_24")
+//original_type("vs0_25")
+//original_type("vs0_26")
+//original_type("vs0_27")
+//original_type("vs0_28")
+//original_type("vs0_29")
+//original_type("vs0_30")
+//original_type("vs0_31")
+//original_type("vs0_32")
+//original_type("vs0_33")
+//original_type("vs0_34")
+//original_type("vs0_35")
+//original_type("vs0_36")
+
+newnode(0, -30, 950)
+newnode(1, -30, 900)
+newnode(2, -30, 850)
+newnode(3, -30, 800)
+newnode(4, -30, 750)
+newnode(5, -30, 700)
+newnode(6, -30, 650)
+newnode(7, -30, 600)
+newnode(8, -30, 550)
+newnode(9, -30, 500)
+newnode(10, -30, 450)
+newnode(11, -30, 400)
+//newnode(12, -30, 350)
+//newnode(13, -30, 300)
+//newnode(14, -30, 250)
+//newnode(15, -30, 200)
+//newnode(16, -30, 200)
+//newnode(17, -30, 150)
+//newnode(18, -30, 100)
+//newnode(19, -30, 50)
+//newnode(20, -30, 0)
+//newnode(21, -30, -50)
+//newnode(22, -30, -100)
+//newnode(23, -30, -150)
+//newnode(24, -30, -200)
+//newnode(25, -30, -250)
+//newnode(26, -30, -300)
+//newnode(27, -30, -350)
+//newnode(28, -30, -400)
+//newnode(29, -30, -450)
+//newnode(30, -30, -500)
+//newnode(31, -30, -550)
+//newnode(32, -30, -600)
+//newnode(33, -30, -650)
+//newnode(34, -30, -700)
+//newnode(35, -30, -750)
+{create_ = 1  create1()}
+{g.size(-584.324,584.324,-730.337,730.337)}
+{set_alias(0)}
+{object_pop()}
+{
+ocbox_.map("NetGUI[0]", 330, 390, 570.6, 586.8)
+}
+objref ocbox_
+//End NetGUI[0]
+
+
+//Begin SpikePlot[0] for NetData[0] staf/elburg
+{
+load_file("netbild.hoc")
+}
+{ocbox_ = new SpikePlot(NetData[0],1)}
+{object_push(ocbox_)}
+mode = 1
+spikeplotstyle= 0
+marksize= 4
+markcolor= 1
+useline= 1
+fwindow = 100
+binwidth = 0.1
+build()
+subset_start=0
+subset_end = 1
+{g.size(0,5,0,2)}
+{object_pop()}
+{
+ocbox_.map("SpikePlot[0] for NetData[0] staf/elburg", 888, 30, 347.4, 592.2)
+}
+objref ocbox_
+//End SpikePlot[0] for NetData[0] staf/elburg
+
+{
+xpanel("RunControl", 0)
+v_init = -65
+xvalue("Init","v_init", 1,"stdinit()", 1, 1 )
+xbutton("Init & Run","run()")
+xbutton("Stop","stoprun=1")
+runStopAt = 5
+xvalue("Continue til","runStopAt", 1,"{continuerun(runStopAt) stoprun=1}", 1, 1 )
+runStopIn = 1
+xvalue("Continue for","runStopIn", 1,"{continuerun(t + runStopIn) stoprun=1}", 1, 1 )
+xbutton("Single Step","steprun()")
+t = 0
+xvalue("t","t", 2 )
+tstop = 4000
+xvalue("Tstop","tstop", 1,"tstop_changed()", 0, 1 )
+dt = 0.1
+xvalue("dt","dt", 1,"setdt()", 0, 1 )
+steps_per_ms = 10
+xvalue("Points plotted/ms","steps_per_ms", 1,"setdt()", 0, 1 )
+xcheckbox("Quiet",&stdrun_quiet,"")
+realtime = 0
+xvalue("Real Time","realtime", 0,"", 0, 1 )
+xpanel(12,102)
+}
+
+//Begin VariableTimeStep
+{
+ocbox_ = NumericalMethodPanel[0]
+}
+{object_push(ocbox_)}
+{
+atol_ = 0.001  CVode[0].atol(atol_)
+restore(0, 1)
+}
+{object_pop()}
+{
+ocbox_.map("VariableTimeStep", 6, 504, 315.9, 365.4)
+}
+objref ocbox_
+//End VariableTimeStep
+
+objectvar scene_vector_[1]
+{doNotify()}
